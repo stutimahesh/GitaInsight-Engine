@@ -2,8 +2,14 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_qdrant import QdrantVectorStore
 from openai import OpenAI
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+api_key = os.getenv("GOOGLE_API_KEY")
+
 openai_client=OpenAI(
-    api_key = "AIzaSyBmcY5YU_ab25xdMzf9NEv_vizyZ5pDjE4",
+    api_key = api_key,
     base_url = "https://generativelanguage.googleapis.com/v1beta/"
 )
 
