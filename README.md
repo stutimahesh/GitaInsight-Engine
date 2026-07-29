@@ -4,6 +4,7 @@ GitaInsight is a Retrieval-Augmented Generation (RAG) based Question Answering s
 
 The system converts the Gita PDF into semantic chunks, generates vector embeddings using Hugging Face models, stores them in a vector database (Dockerized), and retrieves relevant passages to answer user queries using the Gemini LLM.
 
+
 🚀 Project Overview
 
 This project demonstrates:
@@ -20,26 +21,34 @@ This project demonstrates:
 
 🐳 Containerized Deployment using Docker
 
+
 It follows the RAG (Retrieval-Augmented Generation) architecture.
+
 
 🏗️ System Architecture
 
 User Query
 
 ⬇
+
 Convert Query → Vector Embedding
 
 ⬇
+
 Similarity Search in Vector DB
 
 ⬇
+
 Retrieve Top-K Relevant Chunks
 
 ⬇
+
 Pass Context + Query to Gemini LLM
 
 ⬇
+
 Generated Answer
+
 
 🧠 Tech Stack
 
@@ -52,6 +61,7 @@ LLM: Gemini
 Vector Database: Chromadb
 
 Containerization: Docker
+
 
 ⚙️ How It Works
 1️⃣ PDF Ingestion
@@ -106,6 +116,7 @@ Sends context to Gemini
 
 Generates a structured answer
 
+
 🎯 Key Features
 
 Semantic Search (not keyword-based)
@@ -117,6 +128,7 @@ Scalable vector database
 Fully containerized setup
 
 Clean RAG pipeline implementation
+
 
 📊 Future Improvements
 
