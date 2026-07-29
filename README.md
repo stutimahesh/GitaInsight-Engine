@@ -58,7 +58,7 @@ Embedding Model: Hugging Face Sentence Transformers
 
 LLM: Gemini
 
-Vector Database: Chromadb
+Vector Database: Qdrant
 
 Containerization: Docker
 
