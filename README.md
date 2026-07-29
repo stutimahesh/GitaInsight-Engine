@@ -25,14 +25,19 @@ It follows the RAG (Retrieval-Augmented Generation) architecture.
 🏗️ System Architecture
 
 User Query
+
 ⬇
 Convert Query → Vector Embedding
+
 ⬇
 Similarity Search in Vector DB
+
 ⬇
 Retrieve Top-K Relevant Chunks
+
 ⬇
 Pass Context + Query to Gemini LLM
+
 ⬇
 Generated Answer
 
@@ -48,25 +53,6 @@ Vector Database: Chromadb
 
 Containerization: Docker
 
-📂 Project Structure
-GitaRAG/
-│── data/
-│   └── bhagavad_gita.pdf
-│
-│── embeddings/
-│   └── vector_store/
-│
-│── src/
-│   ├── pdf_loader.py
-│   ├── chunking.py
-│   ├── embedding.py
-│   ├── vector_db.py
-│   ├── retriever.py
-│   └── main.py
-│
-│── docker-compose.yml
-│── requirements.txt
-│── README.md
 ⚙️ How It Works
 1️⃣ PDF Ingestion
 
