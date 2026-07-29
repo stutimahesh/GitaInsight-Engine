@@ -1,11 +1,11 @@
-📘 GitaInsight Engine – LLM-Powered Question Answering on the Bhagavad Gita
+# 📘 GitaInsight Engine – LLM-Powered Question Answering on the Bhagavad Gita
 
 GitaInsight is a Retrieval-Augmented Generation (RAG) based Question Answering system built on the Bhagavad Gita.
 
 The system converts the Gita PDF into semantic chunks, generates vector embeddings using Hugging Face models, stores them in a vector database (Dockerized), and retrieves relevant passages to answer user queries using the Gemini LLM.
 
 
-🚀 Project Overview
+## 🚀 Project Overview
 
 This project demonstrates:
 
@@ -25,7 +25,7 @@ This project demonstrates:
 It follows the RAG (Retrieval-Augmented Generation) architecture.
 
 
-🏗️ System Architecture
+## 🏗️ System Architecture
 
 User Query
 
@@ -50,7 +50,7 @@ Pass Context + Query to Gemini LLM
 Generated Answer
 
 
-🧠 Tech Stack
+## 🧠 Tech Stack
 
 Language: Python
 
@@ -63,7 +63,8 @@ Vector Database: Chromadb
 Containerization: Docker
 
 
-⚙️ How It Works
+## ⚙️ How It Works
+
 1️⃣ PDF Ingestion
 
 Load the Bhagavad Gita PDF
@@ -99,12 +100,16 @@ Pass retrieved chunks + query to Gemini LLM
 Generate context-aware answer
 
 🐳 Running with Docker
+
 Step 1: Start Vector Database
 docker-compose up -d
+
 Step 2: Install Dependencies
 pip install -r requirements.txt
+
 Step 3: Run Application
 python main.py
+
 📝 Example Query
 What does Krishna say about karma?
 
@@ -117,7 +122,7 @@ Sends context to Gemini
 Generates a structured answer
 
 
-🎯 Key Features
+## 🎯 Key Features
 
 Semantic Search (not keyword-based)
 
@@ -130,7 +135,7 @@ Fully containerized setup
 Clean RAG pipeline implementation
 
 
-📊 Future Improvements
+## 📊 Future Improvements
 
 Add Web UI (Streamlit / FastAPI)
 
@@ -142,7 +147,7 @@ Deploy on Cloud
 
 Add Hybrid Search (BM25 + Vector)
 
-📚 Learning Outcomes
+## 📚 Learning Outcomes
 
 Practical implementation of RAG architecture
 
