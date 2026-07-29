@@ -1,6 +1,6 @@
 📘 GitaInsight Engine – LLM-Powered Question Answering on the Bhagavad Gita
 
-GitaRAG is a Retrieval-Augmented Generation (RAG) based Question Answering system built on the Bhagavad Gita.
+GitaInsight is a Retrieval-Augmented Generation (RAG) based Question Answering system built on the Bhagavad Gita.
 
 The system converts the Gita PDF into semantic chunks, generates vector embeddings using Hugging Face models, stores them in a vector database (Dockerized), and retrieves relevant passages to answer user queries using the Gemini LLM.
 
@@ -44,11 +44,9 @@ Embedding Model: Hugging Face Sentence Transformers
 
 LLM: Gemini
 
-Vector Database: (e.g., Chroma / Qdrant / Weaviate)
+Vector Database: Chromadb
 
 Containerization: Docker
-
-Framework (if used): LangChain
 
 📂 Project Structure
 GitaRAG/
